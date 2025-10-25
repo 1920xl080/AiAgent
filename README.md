@@ -1,5 +1,3 @@
-Certainly. Here is the `README.md` content again, with the formatting corrected so it should render properly.
-
 # AI Code Assistant Agent
 
 This project is a command-line AI assistant powered by Google's Gemini family of models. It's designed as an "agent" that can intelligently solve problems by using a loop of function calls (tools) to interact with the local file system, read files, and apply changes.
@@ -124,3 +122,4 @@ The 'functions' directory contains: __init__.py, cat.py, ls.py, and patch.py.
       * The *output* of that function (e.g., a list of files) is sent back to the model.
       * The model "observes" this new information and decides what to do next: either call another function (e.g., `cat(path='calculator/calculator.py')`) or, once it has enough information, generate the `final_response`.
 5.  **Iteration Limit (`config.py`)**: The `MAX_ITERS` variable ensures the agent doesn't get stuck in an infinite loop, exiting after a set number of steps.
+
